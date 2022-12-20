@@ -1,0 +1,30 @@
+Ques1 - Try to find out sum of balance.
+Ans1  - select sum(balance) from bank_details
+
+Ques2 - Try to find out average of balance.
+Ans2  - select avg(balance) from bank_details
+
+Ques3 - Try to find out who is having a min balance.
+Ans3  - select * from bank_details where balance = (select min(balance) from bank_details)
+
+Ques4 - Try to find out who is having a mazxmim balance.
+Ans4  - select * from bank_details where balance = (select max(balance) from bank_details)
+
+Ques5 - Try to prepare a list of all the person who is having loan.
+Ans5  - select * from bank_details where loan = 'yes'
+
+Ques6 - Try to find out average balance for all the people whose job role is admin.
+Ans6  - select avg(balance) from bank_details where job = 'admin.'
+
+Ques7 - Try to find out a record  without job whose age is below 45
+Ans7  - select * from bank_details where job = 'unknown' and age <45
+
+Ques8 - Try to find out a record where education is primarty and person is jobless
+Ans8 -  select * from bank_details where education = 'primary' and job = 'unknown'
+
+Ques9 - Try to find of a record whose bank account is having a negative balance.
+Ans9  - select * from bank_details where balance <0
+
+Ques10 - Try to find our a record who is not having house at all along with there balance 
+Ans10  - select * from bank_details where housing = 'no'
+
